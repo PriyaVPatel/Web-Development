@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <!-- Priya Patel IS 448  July 4, 2020 HW 3
+    This assignment take suser inout and processes to see what should be done. IF all requirements are met, 
+    the PHP code will communicate with the specified server to enter items into a database table and 
+    retrieve those items to be displayed-->
+    <head>
+        <title>Writing Therapy</title>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
+        <!-- Links CSS Style sheet -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Writing Therapy.. write your thoughts</h1>
+        
+        <!-- Creates a fourm for text entry for the blog post -->
+        <form method="POST" action="blogPosts.php">
+
+            <!-- This is where the user can enter their blog information-->
+            <p> Create your blog entry:  <br /> <br />
+                <!-- Every entry has been modified to be aesthically pleasing on the html web page by
+                modifying the size of the text box (rows and cols) The name valuse will be read by the 
+                PHP code to retrieve the entry -->
+                Enter the title of your blog post: <textarea rows="1" cols="46" name="blog_title"></textarea> <br />
+                <br/>
+                <!-- Every entry has been modified to be aesthically pleasing on the html web page by
+                modifying the size of the text box (rows and cols) The name valuse will be read by the 
+                PHP code to retrieve the entry -->
+                Enter your post: <textarea rows="6" cols="72" name="blog_textField"></textarea> <br />
+                <br/>
+                <!-- Every entry has been modified to be aesthically pleasing on the html web page by
+                modifying the size of the text box (rows and cols) The name valuse will be read by the 
+                PHP code to retrieve the entry -->
+                Enter  Tags: <textarea rows="1" cols="62" name="blog_tags"></textarea> <br />
+                <br/>
+            </p>
+            <!-- Two buttons, submit and reset are created. 
+            Submit will allow the PHP to determine which code will be displayed after processing the user input
+            Reset will clear the text fields whe clicked -->
+            <input type="submit" value="Submit">  <br/>
+            <input type="reset" value="Reset"> <br/>
+
+            <!-- As per usual, I have included a redicet link to show my HTML and CSS codes are validated -->
+            <p> 
+                <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw3%2Fblog.html"> Valid HTML5 </a> <br/>
+                <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw3%2Fblog.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"> Valid CSS </a> 
+            </p>
+        </form>
+    </body>
+</html>
