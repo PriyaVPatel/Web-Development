@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- Priya Patel 
+IS 448 HW 2 June 4, 2020
+Uses CSS to modify the page, creates a form to store user inputs
+it calls sentToTxt.php and showTxt.php to translate the user input
+into a txt document and another button will read the txxt file -->
+
+   <head>
+      <title>Verify Student ID</title>
+      <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+
+   <body>
+         <!-- Div class uses .campusCardImage modifyer from CSS to display ID image -->
+         <div class ="campusCardImage">
+            <!-- uses the songs css heading modifer to change heading -->
+            <h1 class = "songs">Check Your Student ID</h1>
+            
+            <!-- Uses a container for the text on the image -->
+            <div id="holdImg">
+               <!-- Insert image -->
+               <img src="campusCard.png" alt="campus card image" style="width:100%;">
+            
+               <!-- Locks the form text into place -->
+               <div class="position"> 
+                  <form action="studentIDCheck.php" method="post">
+                     <div>
+                        <h1 class="student">Student Name: <input type="text" name="name" required> </h1>
+                  
+                        <h1 class="student">Campus ID: <input type="text" name="id" required> <input type="submit" id="submit_button" value="Submit"> </h1> 
+                     </div>  
+                  </form>
+               </div>
+            </div>
+       
+         <!-- I have lined the validators with the link already put in to easily check if the html5 and css have been validated -->
+         <p> <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw2%2FstudentID.html"> Valid HTML5 </a> <br/>
+            <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw2%2FstudentID.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"> Valid CSS </a> </p>
+         </div>     
+   </body>   
+</html>

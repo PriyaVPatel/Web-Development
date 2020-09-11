@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+   
+   <!-- Priya Patel 
+   IS 448 HW 2 June 4, 2020
+   Creates a webpage to store favorite songs by black artists to 
+   put some emphasis on the always relevant BLM movement. 
+   All rext fields are required -->
+
+   <head>
+      <title>Submit Your Favorite Music Artist</title>
+      <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="styles.css"><!-- link external css file for design-->
+   </head>
+
+      <body>
+         <!-- image in background  -->
+         <div class="blmImage">
+            <!-- form for user input -->
+            <form action="sendToTxt.php" method="post">
+               <!-- useing title and song to modify text form css file -->
+               <h1 class ="title"> Black Artist Appreation </h1>
+               <h2 class="songs">In light of the Black Lives Matter movement, input or view some favorite musical pieces by Black artists! </h2>
+
+               <div>
+                  <!-- Creates title lable for user input -->
+                  <h4 class="songs">Song Title: </h4>
+                  <input type="text" name="title" required>
+                  
+                  <!-- Creates director / conposer lable for user input -->
+                  <h4 class="songs">Composer: </h4>
+                  <input type="text" name="director" required>
+
+                  <!-- Creates artist / performing group lable for user input -->
+                  <h4 class="songs">Performing Artist or Group: </h4>
+                  <input type="text" name="artist" required>
+
+                  <br><br>
+
+                  <!-- Creates submit button -->
+                  <input type="submit" value="Submit">
+                  <br><br>
+               </div>  
+
+            </form>
+            
+            <!-- Creates button to see user submissions from text file it reads the php file-->
+            <form action="showTxt.php" method="post">
+               <div>
+                  <input type="submit" value="View Suggestions">
+                  <br><br>
+               </div>
+            </form>  
+
+            <br><br>
+         </div> 
+         <!-- I have liked the validators with the link already put in to easily check if the html5 and css have been validated -->
+         <p> <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw2%2Ffavsong.html"> Valid HTML5 </a> <br/>
+            <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw2%2Ffavsong.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"> Valid CSS </a> </p>
+            
+         
+      </body>
+
+
+</html>

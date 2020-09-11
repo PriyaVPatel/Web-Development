@@ -1,0 +1,81 @@
+/* Priya Patel
+IS 448 HW 2 June 4, 2020
+
+CSS code to be used in favsong.html and studentID.html
+Covers some manioulations required in the HW 2 assignment incl
+center align text, background-color, border, padding, margin etc. */
+
+/* div modifications; focuses on text manipulations */
+div {
+   background-color: transparent;
+}
+
+   div.center {
+   text-align: center;
+   margin: auto;
+   border: transparent;
+   padding: 0%;
+   }
+
+/* Center aligns the text for form */
+form {
+   text-align: center;
+}
+
+/* Sets HTML background to black */
+html{ 
+   background-color: black;
+}
+
+/* Image formatting for the BLM image */
+.blmImage{
+   background-image:url('blm.jpg');
+   background-position: center bottom;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+/* Container for the UMBC ID image in studentID.html */
+#holdImg {
+   height: 1350px;
+  width: 1400px;
+   position: relative;
+   color: black;
+}
+
+/* Locking locating for the form in StudentID */
+.position {
+   position: absolute;
+   top: 630px;
+   left: 550px;
+}
+
+/* Text formatting / center align for headings on favsong.html */
+.songs {
+   text-align: center;
+   color: white;
+} 
+
+/* Texrt formatting / center align for headings on studentID.html */
+.student {
+   text-align: left;
+   color:black; 
+}
+
+/* Changes font family and style */
+h1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+}
+
+/* Changes h4 heading to be larger than orgininal */
+h4{
+   font-size: larger;
+}
+
+/* Changes for the heading making it larger */
+.title {
+   text-align: center;
+   font-weight: bold;
+   color: white;
+} 
