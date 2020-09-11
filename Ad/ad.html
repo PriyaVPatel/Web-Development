@@ -1,0 +1,87 @@
+<!-- Priya Patel IS 448 HE 5 June 30, 2020 
+This homework assignment prompts an advertisement 
+it highlights two pieces of inforation 
+it also pormpts for information 
+the infromation will be read to JS which will validate the inputs and providde an appropriate answer
+If it works, PHP will echo its commands in its own files -->
+
+<!DOCTYPE html>
+
+<html lang="EN">
+
+        <head>
+                <title>Flower Advertisement</title>
+                <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
+                <!-- Links CSS Style sheet -->
+                <link rel="stylesheet" type="text/css" href="style.css" />
+        </head>
+
+        <body>
+                <div>
+                        <!-- Inserts Java Script -->
+                        <script src = "format.js"> </script>
+                        
+                        <h1> 
+                                This page is to advertise flowers 
+                        </h1>
+                        
+                        <!-- Text below has two diffrent css adaptions in which it highlights certain  sections of text -->
+                        <p>
+                                Flowers are a great addition to your home. 
+                                Flowers have been around for thousands of years and are used for multitudes of reasons. 
+                                You can have a beautiful garden for your family, create a wall of flowers along your property to deter your nosy neighbor, or even care for a small pot on your study table. 
+                                Flowers are great way to <span class="emph">relieve stress, spend time outdoors (or indoors), have good fragrence, and even add some color to your property. </span> 
+                        </p>
+
+                        <p>
+                                Flowers may not be everyones cup of tea. 
+                                Flowers contain pollen and can have various aromas with diffrent strengths. 
+                                Some flowers also require more attention than others. 
+                                Some people find they are <span class="emph2">allergic, have sensitivty to fragrance, or simply ddo not have time to tend to flowers.</span> 
+                                Please be sure to consult your doctor of any concerns before investing in flowers. 
+                                Flowers, vendors, providors, specialists, and other third parties will not be liable for the death of your flowers, or any incidents relating to death, allergies, or neglegance. 
+                        </p>
+                        
+                        <!-- This form will take in the infromation to be used in PHP and JS -->
+                        <!-- The form information will be read by PHP code -->
+                        <form action="showInfo.php" name="myForm" method="post">
+                                <!-- Prompts and takes in users name -->
+                                Users Name: <input type="text" name="usrname" id="usrname" class="input" >
+                                <br/> <br/>
+
+                                <!-- Prompts and takes in address -->
+                                Street Address: <input type="text" name="address" class="input" >
+                                <br/> <br/>
+
+                                <!-- Prompts and takes in city -->
+                                City: <input type="text" name="city" class="input" >
+                                <br/> <br/>
+
+                                <!-- Prompts and takes in state -->
+                                State: <input type="text" name="state" class="input" >
+                                <br/> <br/>
+
+                                <!-- Prompts and takes in email -->
+                                Email Address:
+                                <input type="text" name="email" class="input" >
+                                <br/> <br/>
+
+                                <!-- Prompts and takes in phone number -->
+                                Phone Number:<input type="text" name="phone" class="input" >
+                                <br/> <br/>
+
+                                <!-- When submit is hit, it will run the JS program for validation of text entries -->
+                                <input type="submit" onclick="return required()"> 
+                                
+                                <!-- Resets the text fields when clicked -->
+                                <input type="reset" name="reset" value="Reset">
+                        </form>
+        
+                        <!-- Validation links are added for convience -->
+                        <p> 
+                                <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw5%2Fad.html"> Valid HTML5 </a> <br/>
+                                <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fswe.umbc.edu%2F%7Epapri1%2Fis448%2F1598-papri1-hw5%2Fad.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"> Valid CSS </a> 
+                        </p>
+                </div>
+        </body>
+</html>
